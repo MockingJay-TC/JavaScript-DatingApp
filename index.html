@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,36 @@
     <title>Age App</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="text-input">
-        <input id="ageEntered" type="number" required/>
-        <input id="getYear" type="submit" value="Find Year"/>
-       
+    <div class="root">
+        <div class="text-input">
+            <span title="Age"> Age: </span>
+            <input id="ageEntered" placeholder="Age" type="number" required />
+            <input id="getYear" type="submit" value="Find Year" />
+        </div>
+        <label for=""> Your Birth Year is <ye id="age"> </ye></label>
+
+        <!-- *********************************************** -->
+        <div class="text-input">
+            <span title="Date of Birth"> DOB: </span>
+            <input id="ageEntered" placeholder="Date of Birth" type="date" required />
+            <input id="getYear" type="submit" value="Find Year" />
+        </div>
+        <label for=""> Your Birth Year is <ye id="age"> </ye></label>
+
+        <!-- *********************************************** -->
+
+        <div class="age-input">
+            <span title="Age at the Date of "> Age at </span>
+            <input id="ageEntered" placeholder="Age at the Date of" type="date" required />
+            <input id="getYear" type="submit" value="Find Year" />
+        </div>
+        <label for=""> Your Birth Year is <ye id="age"> </ye></label>
+
+
     </div>
-    <label for=""> Your Birth Year is <ye id="age"> </ye></label>
     <script src="js/script.js"></script>
 </body>
+
 </html>
