@@ -2,17 +2,74 @@ body{
     margin: 0;
     padding: 0;
     background-color: #ececec;
+    font-size: 1.5rem;
 }
 .root{
+    padding: 100px 20px;
     font-family: Fira Code;
- 
-    /* height: 100vh; */
     text-align: center;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 30px 0.5px rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
 }
 .ageContainer{
     display: none;
+}
+/* ************************************************************************************************************ */
+
+.age-input input {
+    font-size: 1.5rem;
+    padding: 5px;
+    border: 1px solid #333;
+    margin: 20px 0; 
+}
+
+input + input {
+    background-color: cadetblue;
+    color:#333;
+    transition: 0.6s ease-out;
+
+}
+input + input:hover {
+    background-color:tomato;
+    color: #333;
+    transition: 0.6s ease-in;
+}
+
+.disp{
+    margin: 200px;
+    padding: 10px 0px;
+    color: blue;
+}
+.text-input {
+    margin: 20px 0;
+}
+.text-input input {
+    font-size: 1.5rem;
+    padding: 5px;
+    border: 1px solid #333;
+    margin: 20px 0;
+}
+.date-input input{
+    font-size: 1.5rem;
+    padding: 5px;
+    border: 1px solid #333;
+    margin: 20px 0;
+}
+
+#calculateAge{
+    font-size: 1.5rem;
+    background-color: #ececec; 
+    padding: 15px;
+    border: 1px solid #333;
+    transition: 0.6s ease-out;
+}
+#calculateAge:hover{
+    border: 1px solid #333;
+    background-color: #333;
+    color: white;
+    transition: 0.6s ease-in;
 }
