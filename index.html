@@ -11,32 +11,26 @@
 
 <body>
     <div class="root">
-        <div class="text-input">
+        <div class="age-input">
             <span title="Age"> Age: </span>
             <input id="ageEntered" placeholder="Age" type="number" required />
             <input id="getYear" type="submit" value="Find Year" />
         </div>
-        <label for=""> Your Birth Year is <ye id="age"> </ye></label>
-
+        <label for=""> Your Birth Year is: <ye id="age"> </ye></label>
         <!-- *********************************************** -->
         <div class="text-input">
-            <span title="Date of Birth"> DOB: </span>
-            <input id="ageEntered" placeholder="Date of Birth" type="date" required />
-            <input id="getYear" type="submit" value="Find Year" />
+            <span title="Date of Birth"> Date of Birth: </span>
+            <input id="dobEntered" placeholder="Date of Birth" type="date" required />
         </div>
-        <label for=""> Your Birth Year is <ye id="age"> </ye></label>
-
         <!-- *********************************************** -->
-
         <div class="age-input">
-            <span title="Age at the Date of "> Age at </span>
-            <input id="ageEntered" placeholder="Age at the Date of" type="date" required />
-            <input id="getYear" type="submit" value="Find Year" />
+            <span title="Age at the Date of "> Age at the Date of </span>
+            <input id="getAgeInput" placeholder="Age at the Date of" type="date" required />
         </div>
-        <label for=""> Your Birth Year is <ye id="age"> </ye></label>
-
-
+        <button id="calucalateAge"> Calculate </button>
     </div>
+    <script src="js/moment.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/script.js"></script>
 </body>
 

@@ -1,19 +1,17 @@
-function CalculateAge() {
+function ageInYear() {
 
-    // input box
-    let ageEntered = document.getElementById("ageEntered").value;
-    if (ageEntered == "" || ageEntered <= 0) {
-        alert("Enter Valid Age!!! ");
-    } else {
-        // getting year from the date module
-        let myYear = new Date().getFullYear();
-        let birthYear = myYear - ageEntered;
-        let ageInput = document.getElementById("age");
-        ageInput.innerText = birthYear;
-    }
+    let ageInput = document.getElementById("ageEntered").value;
+    let showYear = document.getElementById("age");
+
+    let date = new Date();
+
+    let dob = document.getElementById("dobEntered").value;
+    let ageAtDateOf = document.getElementById("getAgeInput").value;
+
+    let calAge = document.getElementById("calcualteAge");
+
+
+
+
+
 }
-
-let button = document.getElementById("getYear");
-button.onclick = function () {
-    CalculateAge()
-};

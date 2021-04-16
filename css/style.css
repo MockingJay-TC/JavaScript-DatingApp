@@ -1,30 +1,15 @@
 body{
+    margin: 0;
+    padding: 0;
     background-color: #ececec;
-    text-align: center;
+}
+.root{
     font-family: Fira Code;
-}
-
-input{
-    padding: 10px;
-    font-size: 1.5rem;
-    margin: 30px 0px;
-}
-input:first-child{
-   min-width: 350px;
-    
-}
-input + input{
-    background-color: tomato;
-    border: none;
-    outline: none;
-    padding: 10px 5px;
-}
-input +input:hover{
-    background-color: #008aff;
-}
-label{
-    font-size: 1.5rem;
-}
-@media screen  {
-    
+ 
+    /* height: 100vh; */
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
